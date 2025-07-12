@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>World of Toys</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#facc15"/>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js');
+    }
+  </script>
+</head>
+<body class="bg-white font-sans text-gray-800">
+  <header class="bg-yellow-300 py-4 shadow">
+    <div class="container mx-auto flex items-center justify-center">
+      <img src="LOGO DA LOJA.jpeg" alt="Logo World of Toys" class="h-24">
+    </div>
+  </header>
+  <section class="text-center py-6 px-4 bg-blue-100">
+    <h1 class="text-2xl md:text-3xl font-bold text-blue-800">Aqui a diversão começa!</h1>
+    <p class="text-lg mt-2">Brinquedos, papelaria e presentes para todas as idades!</p>
+  </section>
+  <section class="py-8 px-4">
+    <h2 class="text-xl font-bold text-center mb-6">Nossas Categorias</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+      <div class="bg-yellow-100 p-6 rounded-xl shadow">🧸<br><strong>Brinquedos</strong></div>
+      <div class="bg-pink-100 p-6 rounded-xl shadow">✏️<br><strong>Papelaria</strong></div>
+      <div class="bg-green-100 p-6 rounded-xl shadow">🎁<br><strong>Presentes</strong></div>
+    </div>
+  </section>
+  <section class="bg-blue-50 py-8 px-4">
+    <h2 class="text-xl font-bold text-center mb-4">Sobre a World of Toys</h2>
+    <p class="max-w-2xl mx-auto text-center">
+      Somos uma loja dedicada à diversão e criatividade! Oferecemos produtos variados que encantam crianças e adultos.
+    </p>
+  </section>
+  <section class="py-8 px-4 bg-yellow-200">
+    <h2 class="text-xl font-bold text-center mb-4">Contato</h2>
+    <div class="text-center">
+      <p>📍 Rua do Aeroporto, 117 – Centro, Santa Luzia/MA</p>
+      <p>📱 WhatsApp: <a href="https://wa.me/5598982176305" class="text-blue-700 underline">(98) 98217-6305</a></p>
+    </div>
+  </section>
+  <footer class="bg-blue-800 text-white text-center py-4">
+    <p>&copy; 2025 World of Toys. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
